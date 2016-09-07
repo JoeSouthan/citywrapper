@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.citymapper.com/api/1/singlepointcoverage/?coord=51.578973,-0.124147&key=API_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf8
+      Date:
+      - Wed, 07 Sep 2016 13:20:12 GMT
+      Server:
+      - openresty
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '64'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"points": [{"covered": true, "coord": [51.578973, -0.124147]}]}'
+    http_version:
+  recorded_at: Wed, 07 Sep 2016 13:20:12 GMT
+recorded_with: VCR 3.0.3

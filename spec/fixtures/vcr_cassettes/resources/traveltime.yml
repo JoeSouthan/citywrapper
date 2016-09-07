@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.citymapper.com/api/1/traveltime/?endcoord=51.559098,0.074503&key=API_KEY&startcoord=51.525246,0.084672&time&time_type
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf8
+      Date:
+      - Wed, 07 Sep 2016 12:57:24 GMT
+      Server:
+      - openresty
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '64'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"travel_time_minutes": 40, "diagnostic": {"milliseconds": 124}}'
+    http_version:
+  recorded_at: Wed, 07 Sep 2016 12:57:24 GMT
+recorded_with: VCR 3.0.3

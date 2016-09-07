@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://developer.citymapper.com/api/1/coverage/?key=API_KEY
+    body:
+      encoding: UTF-8
+      string: '{"points":[{"coord":[40.1,-73.0],"id":"test1"},{"coord":[37.784,-122.402]},{"coord":[41.84,-73],"id":"test2"},{"id":"test3"}]}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf8
+      Date:
+      - Wed, 07 Sep 2016 14:14:49 GMT
+      Server:
+      - openresty
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '214'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"points": [{"covered": false, "id": "test1", "coord": [40.1, -73.0]},
+        {"covered": true, "coord": [37.784, -122.402]}, {"covered": false, "id": "test2",
+        "coord": [41.84, -73.0]}, {"covered": false, "id": "test3"}]}'
+    http_version:
+  recorded_at: Wed, 07 Sep 2016 14:14:49 GMT
+recorded_with: VCR 3.0.3
