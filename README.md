@@ -1,5 +1,6 @@
 # Citywrapper
 [![Build Status](https://travis-ci.org/JoeSouthan/citywrapper.svg?branch=master)](https://travis-ci.org/JoeSouthan/citywrapper)
+[![Code Climate](https://codeclimate.com/github/JoeSouthan/citywrapper/badges/gpa.svg)](https://codeclimate.com/github/JoeSouthan/citywrapper)
 #### WIP
 
 TODO:
