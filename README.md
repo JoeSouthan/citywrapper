@@ -1,5 +1,5 @@
 # Citywrapper
-
+[![Build Status](https://travis-ci.org/JoeSouthan/citywrapper.svg?branch=master)](https://travis-ci.org/JoeSouthan/citywrapper)
 #### WIP
 
 TODO:
