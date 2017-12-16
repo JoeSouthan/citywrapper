@@ -29,5 +29,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'webmock', '~> 2.1'
   spec.add_development_dependency 'pry', '~> 0.10'
   spec.add_development_dependency 'fuubar', '~> 2.2'
-  spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.6'
+  spec.add_development_dependency 'simplecov', '~> 0.15'
 end
