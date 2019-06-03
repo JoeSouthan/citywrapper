@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Citywrapper
   class ApiBase
     attr_accessor :config, :response
@@ -52,7 +54,7 @@ module Citywrapper
       when :post
         request = Net::HTTP.new(@query_uri.host, @query_uri.port)
         request.use_ssl = true
-        @response = request.post(("#{@query_uri.path}?#{@query_uri.query}"), @params.to_json, JSON_HEADERS)
+        @response = request.post("#{@query_uri.path}?#{@query_uri.query}", @params.to_json, JSON_HEADERS)
       else
         raise 'Only GET or POST'
       end

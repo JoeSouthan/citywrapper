@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'net/http'
 require 'ostruct'
 require 'json'
@@ -9,8 +11,8 @@ require 'citywrapper/resources/coverage'
 require 'citywrapper/resources/single_point_coverage'
 
 module Citywrapper
-  BASE_URL = 'https://developer.citymapper.com/api'.freeze
-  API_VERSION = '1'.freeze
+  BASE_URL = 'https://developer.citymapper.com/api'
+  API_VERSION = '1'
 
   class << self
     attr_accessor :api_key
