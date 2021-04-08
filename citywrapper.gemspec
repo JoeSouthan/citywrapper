@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'citywrapper'
   spec.version       = Citywrapper::VERSION
   spec.authors       = ['Joseph Southan']
-  spec.email         = ['joe+github@sthn.io']
+  spec.email         = ['gems@sthn.io']
 
   spec.summary       = 'Wraps the Citymapper API'
   spec.description   = 'Simple wrapper around the Citymapper API'
@@ -33,4 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'simplecov', '~> 0.15'
   spec.add_development_dependency 'vcr', '~> 6'
   spec.add_development_dependency 'webmock', '~> 3.1'
+
+  spec.post_install_message = "The Citymaper APIs are now deprecated and will likely not work in the future"
 end
