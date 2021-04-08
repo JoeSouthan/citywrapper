@@ -11,6 +11,7 @@ module Citywrapper
 
     def initialize
       @config = Citywrapper.configuration
+      warn "NOTE: #{self.class} is deprecated and will likely not work in the future"
     end
 
     def request(params: {}, method: :get)

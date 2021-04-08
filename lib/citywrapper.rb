@@ -20,6 +20,7 @@ module Citywrapper
   end
 
   def self.configuration
+    warn "NOTE: Citymaper APIs are now deprecated and will likely not work in the future"
     @configuration ||= Configuration.new
   end
 
